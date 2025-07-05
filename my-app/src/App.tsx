@@ -50,7 +50,7 @@ const App = () => {
   form.append('phone', formData.phone);
 
   try {
-    const response = await fetch('${process.env.REACT_APP_API_URL}/submit', {
+    const response = await fetch('/submit', {
       method: 'POST',
       body: form,
     });
