@@ -50,7 +50,7 @@ const App = () => {
   form.append('phone', formData.phone);
 
   try {
-    const response = await fetch('/submit', {
+    const response = await fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/submit`, {
       method: 'POST',
       body: form,
     });
